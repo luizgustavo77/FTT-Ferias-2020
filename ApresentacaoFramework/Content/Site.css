@@ -1,0 +1,77 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logoPokemon {
+    width: 100%;
+    margin-top: -3%;
+}
+
+.logoPokebola {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: -20%;
+}
+
+.menu {
+    background: rgb(196,191,7);
+    background: linear-gradient(90deg, rgba(196,191,7,1) 0%, rgba(226,97,5,1) 35%, rgba(238,5,5,1) 100%);
+    border-bottom: solid;
+}
+
+
+.menuPokemons {
+    color: black;
+    font-weight: bold;
+}
+
+.menuLinks {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.error {
+    width: 50%;
+    margin-left: 27%;
+}
+
+.btnPikachu {
+    background-color: yellow;
+    margin-left: -10%;
+    border: solid;
+}
+
+.pokemonSelect:hover {
+    border:solid;
+}
+
+body, h3 {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.Titulo {
+    color: darkred;
+    font-weight: bold;
+}

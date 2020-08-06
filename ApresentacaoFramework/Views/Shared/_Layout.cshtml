@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/Content/images/pokebola.png">
+    <title>@ViewBag.Title - Desenvolvimento WEB</title>
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/bundles/estilos")
+</head>
+<body>
+    <div class="menu navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("POKÉMONS", "Index", "Home", new { area = "" }, new { @class = "menuPokemons navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="menuLinks nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = ""}, new { @class = "menuLinks" })</li>
+                    <li>@Html.ActionLink("Sobre", "About", "Home", new { area = "" }, new { @class = "menuLinks" })</li>
+                    <li>@Html.ActionLink("Contato", "Contact", "Home", new { area = "" }, new { @class = "menuLinks" })</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="text-center">
+            <p>&copy; @DateTime.Now.Year - Luiz Gustavo de Freitas</p>
+        </footer>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

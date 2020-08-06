@@ -1,0 +1,38 @@
+﻿@model IList<Apresentacao.Models.PokemonModel>
+
+<script type="text/javascript" src="~/Scripts/adicional/config.js"></script>
+
+<div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img class="logoPokemon" src="~/Content/images/pokemon.png" />
+            <img class="logoPokebola" src="~/Content/images/pokebola.png" />
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
+        <h3 class="Titulo"> @ViewData["Title"] </h3>
+        <p style="color:black;">Escolha o inicial.</p>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<br />
+
+<div class="row" id="secreto">
+    @foreach (var item in Model)
+    {
+        if (item.id != 25)
+        {
+            <div class="pokemonSelect col-md-4">
+                <h2 class="text-center">@item.name.ToUpper()</h2>
+                <img src=@item.sprites.front_default style="width:100%;" />
+            </div>
+        }
+    }
+</div>

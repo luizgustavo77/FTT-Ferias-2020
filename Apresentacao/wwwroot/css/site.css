@@ -1,0 +1,155 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+.logoPokemon {
+    width: 100%;
+    margin-top: -3%;
+}
+
+.logoPokebola {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: -20%;
+}
+
+.menu {
+    background: rgb(196,191,7);
+    background: linear-gradient(90deg, rgba(196,191,7,1) 0%, rgba(226,97,5,1) 35%, rgba(238,5,5,1) 100%);
+    border-bottom: solid;
+}
+
+
+.menuPokemons {
+    color: black;
+    font-weight: bold;
+}
+
+.menuLinks {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.error {
+    width: 50%;
+    margin-left: 27%;
+}
+
+.btnPikachu {
+    background-color: yellow;
+    margin-left: -10%;
+    border: solid;
+}
+
+.pokemonSelect:hover {
+    border: solid;
+}
+
+.PokemonTitulo {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.Titulo {
+    color: darkred;
+    font-weight: bold;
+}
+
+.ButtonLogin {
+    width: 30%;
+}
+
+.ButtonCadastro {
+    width: 9.5%;
+}
+
+.ButtonCadastro, a {
+    color: white;
+}
+
+.ui-dialog-titlebar-close {
+    padding: 0 !important;
+}
+
+    .ui-dialog-titlebar-close:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        /* Change path to image*/
+        background-image: url(/images/close.png);
+        background-position: -96px -128px;
+        background-repeat: no-repeat;
+    }

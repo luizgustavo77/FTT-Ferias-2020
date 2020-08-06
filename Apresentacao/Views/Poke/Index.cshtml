@@ -1,0 +1,25 @@
+﻿@model Apresentacao.Models.PokemonModel
+
+    <script type="text/javascript" src="~/js/adicional/poke.js"></script>
+
+    <br />
+
+    <div class="row">
+        @if (Model != null)
+        {
+            <div class="col-md-4"></div>
+            <div class="pokemonSelect col-md-4" onclick="poke().details();">
+                <h2 class="text-center PokemonTitulo">@Model.name.ToUpper()</h2>
+                <img src=@Model.sprites.front_default style="width:100%;" />
+            </div>
+            <div class="col-md-4"></div>
+        }
+        else
+        {
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <p style="color:black;">Você não tem pokemons.</p>
+            </div>
+            <div class="col-md-4"></div>
+        }
+    </div>
